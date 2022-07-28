@@ -17,7 +17,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /home/ubuntu/AltaSocialMedia-BE
+            cd /home/ubuntu/Deploy-Test
             git pull origin main
             docker build -t socialMedia-api:latest .
             docker run -d -p 80:80 --name socialMediaContainer socialMedia-api:latest
