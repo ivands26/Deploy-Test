@@ -9,6 +9,6 @@ WORKDIR /app
 # copy all files to /app
 COPY . .
 
-RUN go build -o AltaSocialMedia-BE
+RUN go build -o altasocial
 
-CMD [ ".AltaSocialMedia-BE" ]
+CMD [ "./altasocial" ]
