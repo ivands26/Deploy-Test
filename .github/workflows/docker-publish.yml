@@ -19,5 +19,5 @@ jobs:
           script: |
             cd /home/ubuntu/Deploy-Test
             git pull origin main
-            docker build -t socialMedia-api:latest .
-            docker run -d -p 80:80 --name socialMediaContainer socialMedia-api:latest
+            docker build -t socialmedia-api:latest .
+            docker run -d -p 80:80 --name socialmediacontainer socialmedia-api:latest
