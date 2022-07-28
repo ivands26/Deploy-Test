@@ -19,8 +19,5 @@ jobs:
           script: |
             cd /home/ubuntu/AltaSocialMedia-BE
             git pull origin main
-            docker stop socialMediaContainer
-            docker rm socialMediaContainer
-            docker rmi socialMedia-api
             docker build -t socialMedia-api:latest .
             docker run -d -p 80:80 --name socialMediaContainer socialMedia-api:latest
